@@ -30,6 +30,9 @@ function the_ridge_check_dependencies() {
         <?php
     }
 }
+
+add_action('admin_notices', 'the_ridge_check_dependencies');
+
 function theridgebali_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 	if ( ! is_singular() ) {
