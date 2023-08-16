@@ -48,9 +48,10 @@ function theridgebali_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'theridgebali' ),
-		)
+        array(
+            'primary-menu' => esc_html__('Primary Menu', 'theridgebali'),
+            'secondary-menu' => esc_html__('Secondary Menu', 'theridgebali'),
+        )
 	);
 
 	/*
@@ -84,6 +85,10 @@ function theridgebali_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	//custom-image-post-grid
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'blog-post-grid', 416, 550, true ); // Hard Crop Mode
 
 	/**
 	 * Add support for core custom logo.
