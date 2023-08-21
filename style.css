@@ -533,17 +533,17 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: #000000;
 }
 
 a:visited {
-	color: #800080;
+	color: #000000;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: #000000;
 }
 
 a:focus {
@@ -946,7 +946,7 @@ textarea {
 	float: left;
 
 	/*rtl:ignore*/
-	margin-right: 1.5em;
+	margin-right: 0.4em;
 	margin-bottom: 1.5em;
 }
 
