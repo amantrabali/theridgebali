@@ -96,14 +96,4 @@
 			menuItem.classList.toggle( 'focus' );
 		}
 	}
-	window.addEventListener('scroll', function() {
-	  const header = document.querySelector('.nav-sticky');
-	  const scrollPosition = window.scrollY;
-
-	  if (scrollPosition > 98) {
-	    header.classList.add('sticky');
-	  } else {
-	    header.classList.remove('sticky');
-	  }
-	});
 }() );
