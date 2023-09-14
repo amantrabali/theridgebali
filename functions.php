@@ -187,3 +187,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+function theridge_bali_body_class($classes) {
+    $classes[] = 'theridge-bali-layout';
+    return $classes;
+}
+add_filter('body_class', 'theridge_bali_body_class');
