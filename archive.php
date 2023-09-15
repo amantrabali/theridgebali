@@ -7,7 +7,7 @@
  * @package The_Ridge_Bali
  */
 
-echo do_shortcode( '[hfe_template id='2078']' );
+echo do_shortcode( '[hfe_template id=2078]' );
 ?>
 	<main id="primary" class="site-main">
 		<?php if ( have_posts() ) : ?>
