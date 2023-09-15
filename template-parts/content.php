@@ -9,7 +9,6 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	global $post;
 	// Get the post title and truncate it to 122 characters
@@ -23,6 +22,7 @@
 	?>
 
 	<div class="col-lg-4 col-md-12 mb-3 d-flex align-items-stretch">
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="card rounded-0 border-0 overflow-hidden">
             <div class="image position-relative overflow-hidden">
             	<a class="" href="<?php echo get_the_permalink(); ?>">
@@ -59,5 +59,5 @@
             	</div>              
             </div>
         </div>
+        </article><!-- #post-<?php the_ID(); ?> -->
     </div><!--end col-->
-</article><!-- #post-<?php the_ID(); ?> -->
