@@ -13,9 +13,9 @@
 	<?php
 	global $post;
 	// Get the post title and truncate it to 122 characters
-	$title = $this->get_truncated_title(10);
+	$title = get_truncated_title(10);
     // Get the post description and truncate it to 122 characters
-    $description = $this->get_truncated_description(20);
+    $description = get_truncated_description(20);
     // Get the first category for the current post
 	$categories = get_the_category($post->ID);           
     $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'blog-post-grid' );
