@@ -7,7 +7,7 @@
  * @package The_Ridge_Bali
  */
 
-<?php echo do_shortcode( '[hfe_template id='2078']' ); ?>
+echo do_shortcode( '[hfe_template id='2078']' );
 ?>
 	<main id="primary" class="site-main">
 		<?php if ( have_posts() ) : ?>
@@ -48,4 +48,4 @@
 		?>		
 	</main><!-- #main -->
 <?php
-<?php echo do_shortcode( '[hfe_template id='622']' ); ?>
+echo do_shortcode( '[hfe_template id='622']' );
