@@ -7,6 +7,7 @@
  * @package The_Ridge_Bali
  */
 
+get_header();
 echo do_shortcode( '[hfe_template id=2078]' );
 ?>
 	<main id="primary" class="site-main">
@@ -49,3 +50,4 @@ echo do_shortcode( '[hfe_template id=2078]' );
 	</main><!-- #main -->
 <?php
 echo do_shortcode( '[hfe_template id=622]' );
+get_footer();
