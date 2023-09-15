@@ -209,3 +209,4 @@ function get_truncated_title($length) {
 	}
 	return $post_title;
 }
+add_filter( 'get_the_archive_title_prefix', '__return_empty_string' );
