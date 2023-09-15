@@ -11,7 +11,6 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<!-- Blog Grid Start -->
 		<div class="container-fluid blog-section">
 	    <div class="row justify-content-center">
 
