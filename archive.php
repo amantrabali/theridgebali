@@ -48,4 +48,4 @@ echo do_shortcode( '[hfe_template id=2078]' );
 		?>		
 	</main><!-- #main -->
 <?php
-echo do_shortcode( '[hfe_template id='622']' );
+echo do_shortcode( '[hfe_template id=622]' );
