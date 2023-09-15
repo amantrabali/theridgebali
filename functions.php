@@ -209,4 +209,10 @@ function get_truncated_title($length) {
 	}
 	return $post_title;
 }
-add_filter( 'get_the_archive_title_prefix', '__return_empty_string' );
+function remove_category_prefix_from_archive_title($title) {
+    if (is_category()) {
+        $title = single_cat_title('', false);
+    }
+    return $title;
+}
+add_filter('get_the_archive_title', 'remove_category_prefix_from_archive_title');
