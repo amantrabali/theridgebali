@@ -193,3 +193,19 @@ function theridge_bali_body_class($classes) {
     return $classes;
 }
 add_filter('body_class', 'theridge_bali_body_class');
+
+function get_truncated_description($length) {
+    $post_excerpt = get_the_excerpt();
+    if (mb_strlen($post_excerpt) > $length) {
+        $post_excerpt = wp_trim_words($post_excerpt, $length, '...');
+    }
+    return $post_excerpt;
+}
+
+function get_truncated_title($length) {
+	$post_title = get_the_title();
+	if (mb_strlen($post_title) > $length) {
+	    $post_title = wp_trim_words($post_title, $length,'');
+	}
+	return $post_title;
+}
