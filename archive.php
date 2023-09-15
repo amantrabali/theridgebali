@@ -11,9 +11,7 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<!-- Blog Grid Start -->
-		<div class="container-fluid blog-section">
-	    <div class="row justify-content-center">
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -23,6 +21,10 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+
+			<!-- Blog Grid Start -->
+			<div class="container-fluid blog-section">
+		    <div class="row justify-content-center">
 
 			<?php
 			/* Start the Loop */
@@ -34,9 +36,15 @@ get_header();
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+				get_template_part( 'template-parts/content-archive', get_post_type() );
 
 			endwhile;
+			?>
+
+			</div>
+			</div>
+
+			<?php
 
 			the_posts_navigation();
 
@@ -46,8 +54,7 @@ get_header();
 
 		endif;
 		?>
-		</div>
-		</div>
+		
 	</main><!-- #main -->
 
 <?php
